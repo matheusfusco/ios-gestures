@@ -13,6 +13,12 @@
 		F9983ABD1D75D95300D6B293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9983ABB1D75D95300D6B293 /* Main.storyboard */; };
 		F9983ABF1D75D95300D6B293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9983ABE1D75D95300D6B293 /* Assets.xcassets */; };
 		F9983AC21D75D95300D6B293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9983AC01D75D95300D6B293 /* LaunchScreen.storyboard */; };
+		F9983ACD1D75D9A200D6B293 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = F9983AC91D75D9A200D6B293 /* banana.png */; };
+		F9983ACE1D75D9A200D6B293 /* chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9983ACA1D75D9A200D6B293 /* chomp.wav */; };
+		F9983ACF1D75D9A200D6B293 /* hehehe.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9983ACB1D75D9A200D6B293 /* hehehe.wav */; };
+		F9983AD01D75D9A200D6B293 /* monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = F9983ACC1D75D9A200D6B293 /* monkey.png */; };
+		F9983AD41D75DED200D6B293 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9983AD31D75DED200D6B293 /* AVFoundation.framework */; };
+		F9983AD81D75E0FC00D6B293 /* TickleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F9983AD71D75E0FC00D6B293 /* TickleGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,13 @@
 		F9983ABE1D75D95300D6B293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9983AC11D75D95300D6B293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9983AC31D75D95300D6B293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9983AC91D75D9A200D6B293 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
+		F9983ACA1D75D9A200D6B293 /* chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chomp.wav; sourceTree = "<group>"; };
+		F9983ACB1D75D9A200D6B293 /* hehehe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hehehe.wav; sourceTree = "<group>"; };
+		F9983ACC1D75D9A200D6B293 /* monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkey.png; sourceTree = "<group>"; };
+		F9983AD31D75DED200D6B293 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F9983AD61D75E0FC00D6B293 /* TickleGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickleGestureRecognizer.h; sourceTree = "<group>"; };
+		F9983AD71D75E0FC00D6B293 /* TickleGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickleGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9983AD41D75DED200D6B293 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,10 +76,13 @@
 				F9983AB61D75D95300D6B293 /* AppDelegate.m */,
 				F9983AB81D75D95300D6B293 /* ViewController.h */,
 				F9983AB91D75D95300D6B293 /* ViewController.m */,
+				F9983AD61D75E0FC00D6B293 /* TickleGestureRecognizer.h */,
+				F9983AD71D75E0FC00D6B293 /* TickleGestureRecognizer.m */,
 				F9983ABB1D75D95300D6B293 /* Main.storyboard */,
 				F9983ABE1D75D95300D6B293 /* Assets.xcassets */,
 				F9983AC01D75D95300D6B293 /* LaunchScreen.storyboard */,
 				F9983AC31D75D95300D6B293 /* Info.plist */,
+				F9983AD51D75DEDB00D6B293 /* Frameworks */,
 				F9983AB21D75D95300D6B293 /* Supporting Files */,
 			);
 			path = GestureRecognizer;
@@ -74,9 +91,38 @@
 		F9983AB21D75D95300D6B293 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F9983AD21D75D9B700D6B293 /* Sounds */,
+				F9983AD11D75D9A800D6B293 /* Images */,
 				F9983AB31D75D95300D6B293 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9983AD11D75D9A800D6B293 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F9983AC91D75D9A200D6B293 /* banana.png */,
+				F9983ACC1D75D9A200D6B293 /* monkey.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F9983AD21D75D9B700D6B293 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F9983ACA1D75D9A200D6B293 /* chomp.wav */,
+				F9983ACB1D75D9A200D6B293 /* hehehe.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		F9983AD51D75DEDB00D6B293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9983AD31D75DED200D6B293 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +182,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9983AD01D75D9A200D6B293 /* monkey.png in Resources */,
 				F9983AC21D75D95300D6B293 /* LaunchScreen.storyboard in Resources */,
+				F9983ACF1D75D9A200D6B293 /* hehehe.wav in Resources */,
 				F9983ABF1D75D95300D6B293 /* Assets.xcassets in Resources */,
+				F9983ACE1D75D9A200D6B293 /* chomp.wav in Resources */,
+				F9983ACD1D75D9A200D6B293 /* banana.png in Resources */,
 				F9983ABD1D75D95300D6B293 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +202,7 @@
 				F9983ABA1D75D95300D6B293 /* ViewController.m in Sources */,
 				F9983AB71D75D95300D6B293 /* AppDelegate.m in Sources */,
 				F9983AB41D75D95300D6B293 /* main.m in Sources */,
+				F9983AD81D75E0FC00D6B293 /* TickleGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
